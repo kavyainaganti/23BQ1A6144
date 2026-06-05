@@ -70,7 +70,12 @@ function App() {
 
           <p><strong>Category:</strong> {item.category}</p>
           <p><strong>Priority:</strong> {item.priority}</p>
-          <p><strong>Status:</strong> {item.status}</p>
+
+          <p>
+            <strong>Status:</strong>{" "}
+            {item.status === "NEW" ? "NEW 🔵" : "VIEWED ⚪"}
+          </p>
+
           <p><strong>Timestamp:</strong> {item.timestamp}</p>
           <p><strong>Message:</strong> {item.message}</p>
         </div>
